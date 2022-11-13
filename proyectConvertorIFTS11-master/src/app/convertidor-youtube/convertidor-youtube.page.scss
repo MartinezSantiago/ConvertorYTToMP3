@@ -1,0 +1,91 @@
+ion-header {
+    ion-toolbar{
+        background-color: #3fa889e0;
+    }
+    
+}
+
+ion-content{
+    margin-top: 40px;
+    height:auto;
+    .bg {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../media/img/bg-convertor-darkness.png');
+        background-repeat: repeat;
+    ion-label {
+        text-align: center;
+        display: block;
+        padding: 40px 0 0 0;
+        font-size: 25px;
+        color:#fff;
+    }
+    iframe {
+        display: block;
+        margin: 30px auto 0 auto;
+        width: 50vw;
+       height:50vh;
+        max-width:70vw;
+    }
+
+    ion-input {
+        width: 70%;
+        font-size: 16px;
+        background-color: #08ffb59f;
+        color: #fff;
+        font-weight: 500;
+        margin: 20px auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+
+    audio {
+        margin-top: 30px;
+        display: none;
+        margin: 30px auto 0 auto;
+        width: 350px;
+        
+    }
+
+    ion-button {
+        margin: 20px auto;
+        width: 200px;
+        border-radius: 30px;
+        border: none;
+        display: block;
+        background-color: #08ffb55e;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.438);
+        transition: all .5s;
+        &:hover {
+            background-color: #08ffb59f;
+            transition: all .5s;
+        }
+    }
+    }
+    
+    
+}
+.alertDownload{
+    background-color: #08ffb59f;
+    color: red;
+}
+
+.preview {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fallback {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #bfbfbf;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }

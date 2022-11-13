@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-router-outlet  id="primerMenu"></ion-router-outlet>
+  <div id="menu">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="white">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-header>
+  <ion-menu side="start"
+            menuId="first"
+            contentId="primerMenu"
+            [fullscreen]="true" >
+
+  <ion-header [translucent]="true">
+    <ion-toolbar color="white">
+      <ion-title>Menu principal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="white">
+    <ion-list >
+      <ion-item><a (click)="logout()" href="/"><ion-icon slot="icon-only" name="log-out"></ion-icon></a></ion-item>
+      <ion-item><a (click)="redirectToConvertorMusica()">Convertor de Musica</a></ion-item>
+      <ion-item><a (click)="redirectToConvertorTasaDeCambio()" >Convertor de Tasa de Cambio</a></ion-item>
+      <ion-item><a (click)="redirectToPerfil()" >Editar Perfil</a></ion-item>
+      
+    </ion-list>
+  </ion-content>
+  </ion-menu>
+</div>
+ 
+ 
+</ion-app>

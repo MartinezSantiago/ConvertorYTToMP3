@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@awesome-cordova-plugins/in-app-browser": "^6.2.0",
+    "cordova-plugin-inappbrowser": "^5.0.0"
+  }
+}

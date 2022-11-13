@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="white" >      
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<div class="bg">
+  <div class="ImagenLabel">
+  <ion-label for="Imagen" style="color:white" aria-label="Imagen">Imagen</ion-label>
+  </div>
+  <div class="preview">
+   
+    <ion-avatar (click)="changeImage()">
+    
+
+      <img *ngIf="profile?.ImageUrlBefore; else ImagenUrl" [src]="profile.ImageUrlBefore" id="ImageUrl"  />
+      <ng-template #ImagenUrl>
+      <img *ngIf="profile?.ImageUrl; else placeholder_avatar" [src]="profile.ImageUrl" id="ImageUrl1"  />
+      </ng-template>
+
+
+    <ng-template #placeholder_avatar>
+      <div class="fallback">
+        <ion-label>Perfil</ion-label>
+      </div>
+    </ng-template>
+  </ion-avatar>
+  </div>
+  
+
+ 
+  <div class="changePerfil">
+  
+    <div class="inputName">
+
+      <ion-label for="Nombre" style="color:white" aria-label="Nombre">Nombre:</ion-label>
+      <ion-input type="text" name="Nombre" color="primary" id="Nombre"  [value]="profile?.Nombre"></ion-input>
+    </div>
+  </div>
+<div class="btnChange">
+  <ion-button (click)="guardarCambios()" color="white">
+    Guardar Cambios
+  </ion-button>
+</div>
+
+<div class="btnChange">
+  <ion-button (click)="cambiarContrasenia()" color="white">
+    Cambiar Contraseña
+  </ion-button>
+</div>
+</div>
+
+</ion-content>
